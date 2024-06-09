@@ -5,18 +5,20 @@ default: &default
 development:
   <<: *default
   adapter: mysql2
+  encoding: utf8
   username: root
   password:
   host: localhost
-  database: protospace-40399_development
+  database: protospace_40399_development
 
 test:
   <<: *default
   adapter: mysql2
+  encoding: utf8
   username: root
   password:
   host: localhost
-  database: protospace-40399_test
+  database: protospace_40399_test
 
 production:
   <<: *default
